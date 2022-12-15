@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: tomato;
+}
+li {
+  list-style: none;
+  padding: 0px 5px;
+}
+a:is(:link, :active, :visited) {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+}
+a:is(:link, :active, :visited):hover {
+  background-color: #000;
+}
+a:is(:link, :active, :visited).active {
+  background-color: black;
+}
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.box h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: white;
+  text-transform: capitalize;
+}
